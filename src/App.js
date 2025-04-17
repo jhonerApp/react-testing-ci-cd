@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { whoIPService } from "./services/whoisAPI.service";
 
 function App() {
@@ -73,7 +73,7 @@ function App() {
 
         <div className="overflow-x-auto shadow rounded-xl">
           <table className="min-w-full bg-white">
-            {value == "domain" ? (
+            {value === "domain" ? (
               <>
                 <thead>
                   <tr className="bg-gray-100 text-left">
